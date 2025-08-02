@@ -8,10 +8,12 @@ import javax.swing.JOptionPane;
 
 public class GoofyNames {
 	public static void main(String[] args) {
-		String goofyName = "";
+
 
 		// 1. Ask the user to enter their name
-
+		
+		String names = JOptionPane.showInputDialog("Please enter your name");
+		System.out.println(names);
 		// 2. Print upper case name to the console using .toUpperCase()
 		//    Run your program to see that this works.
 
@@ -34,6 +36,9 @@ public class GoofyNames {
 		
 		// 8. Use pop-up to show user their Goofy name
 
+	
+
+	
 	}
 }
 
