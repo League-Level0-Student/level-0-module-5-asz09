@@ -16,8 +16,22 @@ public class GoofyNames {
 		System.out.println(burrito.toUpperCase());
 		
 		String goofyName = "";
-		for(int i = 0; i < burrito.length(); i++); {
-			char variable = burrito.charAt();
+		for(int i = 0; i < burrito.length(); i++)
+		{
+			char variable = burrito.charAt(i);
+		
+			int r = (variable % 2);
+			
+			if (r==0) {
+		burrito.toUpperCase();
+			}
+			else if (r==2) {
+				burrito.toLowerCase();
+
+					}
+					
+			
+			
 		}
 		// 2. Print upper case name to the console using .toUpperCase()
 		//    Run your program to see that this works.
@@ -45,4 +59,3 @@ public class GoofyNames {
 	
 	}
 }
-
