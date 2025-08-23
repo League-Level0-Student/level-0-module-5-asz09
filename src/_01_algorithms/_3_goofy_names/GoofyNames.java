@@ -15,7 +15,7 @@ public class GoofyNames {
 		String burrito = JOptionPane.showInputDialog("Please enter your name");
 		System.out.println(burrito.toUpperCase());
 		
-		String goofyName = "";
+		String goofyName ="";
 		for(int i = 0; i < burrito.length(); i++)
 		{
 			char variable = burrito.charAt(i);
@@ -23,16 +23,22 @@ public class GoofyNames {
 			int r = (variable % 2);
 			
 			if (r==0) {
-		burrito.toUpperCase();
+				variable = Character.toUpperCase(variable);
+		
 			}
-			else if (r==2) {
-				burrito.toLowerCase();
+			else if (r==1) {
 
-					}
+				variable = Character.toLowerCase(variable);
+				
+			}
+			
+			goofyName = goofyName + variable;
 					
+			System.out.println(goofyName);
 			
 			
 		}
+		JOptionPane.showMessageDialog(null, goofyName);
 		// 2. Print upper case name to the console using .toUpperCase()
 		//    Run your program to see that this works.
 
