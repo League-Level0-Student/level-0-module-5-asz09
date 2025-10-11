@@ -1,5 +1,7 @@
 package _02_nested_loops._2_amazing_rings;
 
+import javax.swing.JFrame;
+
 import processing.core.PApplet;
 import processing.core.PImage;
 
@@ -9,7 +11,7 @@ import processing.core.PImage;
  * 1. Open the demonstration for this recipe by opening the Recipe.html
  *    file in this folder.
  * 
- * In the setup() method:
+ * In the settings() method:
  * 2. Set the size of your window to be a rectangle like in the recipe
  *    demonstration
  * 3. Call the noFill() command so all the ellipses will be transparent
@@ -44,17 +46,18 @@ public class AmazingRings extends PApplet {
 
     @Override
     public void settings() {
-
-    }
+    	size(WIDTH,HEIGHT);
+    	
+}
 
     @Override
-    public void setup() {
-
+    public void setup(){
+    	noFill();
     }
 
     @Override
     public void draw() {
-
+//for(int i)
     }
 
     static public void main(String[] args) {
