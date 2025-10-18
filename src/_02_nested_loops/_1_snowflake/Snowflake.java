@@ -31,7 +31,7 @@ for(int i = 0; i<6; i++) {
 		
 
 			// #6. Set the pen color to black
-			rob.setPenColor(255,187,0);
+			rob.setPenColor(255,587,74);
 			
 			// #7. move the robot by 50
 			rob.move(50);
@@ -42,11 +42,11 @@ for(int i = 0; i<6; i++) {
 		// #12. set the pen color to blue for even numbers of i
 			
 			if (i % 2 == 0) {
-				rob.setPenColor(0,0,255);
+				rob.setPenColor(0,77,255);
 			}
 			else if (i % 1==0) {
 				for(int j = 0; j<6; j++) {
-				rob.setPenColor(255, 0, 255);
+				rob.setPenColor(255, 32, 385);
 			}
 }
 
@@ -67,7 +67,7 @@ for(int i = 0; i<6; i++) {
 				
 			}
 			// #14. set the pen color to black
-				rob.setPenColor(255,187,0);
+				rob.setPenColor(255,88,0);
 		
 	}
 
