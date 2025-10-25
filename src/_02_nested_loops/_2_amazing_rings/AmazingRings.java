@@ -41,8 +41,9 @@ import processing.core.PImage;
 public class AmazingRings extends PApplet {
 	static final int WIDTH = 800;
 	static final int HEIGHT=600;
-	int speed = 20;
+	int speed = 1;
 	int x=50;
+	int x1=750;
 
 	@Override
 	public void settings() {
@@ -74,15 +75,34 @@ public class AmazingRings extends PApplet {
 				
 			}
 			size -= 20;
-			
+
+			for(int i1 = 0; i1 < 8 ; i1++) {
+				if (i1%2 == 0){
+					
+					
+					ellipse(x1,300,size,size);
+				}
+				else{
+				
+					ellipse(x1,300,size,size);
+					
+				}
 		}
 	x+=speed;
-	
+	if (x > 750){
 
-		
+	
+speed = -speed;
+
 		
 	}
-
+	else if (x < 50) {
+		speed = -speed;
+	
+		}
+	
+		}
+	}
 	
 	
 	
