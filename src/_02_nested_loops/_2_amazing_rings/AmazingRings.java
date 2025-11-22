@@ -96,7 +96,7 @@ speed = -speed;
 
 		
 	}
-	else if (x < 50) {
+	else if (x < -50) {
 		speed = -speed;
 	
 		}
