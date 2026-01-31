@@ -9,22 +9,20 @@ public class ObedientRobot {
 		Robot rob = new Robot();
 		drawSquare(rob);
 		drawTriangle(rob);
-		JOptionPane.showInputDialog("Which shape do you want?");
-		String input = null;
-		if(input=="square") {
-			rob.penDown();
-			drawSquare(rob);
+			
+	
 
-		}
+	}
+
+private static void drawCircle(Robot rob) {
+		// TODO Auto-generated method stub
 		
-		}
-	
-
-	
+	}
 
 // JOptionPane.showInputDialog("Which shape do you want?");
 
 	static void drawSquare(Robot rob){
+		rob.penDown();
 		rob.setSpeed(30);
 		rob.move(200);
 		rob.turn(90);
@@ -33,6 +31,7 @@ public class ObedientRobot {
 		rob.move(200);
 		rob.turn(90);
 		rob.move(200);
+		rob.penUp();
 			
 		
 		}
@@ -48,7 +47,16 @@ static void drawTriangle(Robot rob) {
 	rob.move(200);
 	rob.turn(120);
 	rob.move(200);
+	rob.penUp();
+	}
+	
+static void drawCircle1(Robot rob) {
+	rob.penDown();
+	rob.move(200);
+	rob.turn(20);
+	rob.move(200);
+	rob.turn(20);
+	
 }
-		
 		
 }
