@@ -19,7 +19,7 @@ JOptionPane.showOptionDialog(null, "What pet do you want?", "Choose your partner
 				replenishFood();
 				JOptionPane.showMessageDialog(null, "Your pet is happy!");
 
-
+//sddd
 			}
 
 		}
