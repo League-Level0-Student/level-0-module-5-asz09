@@ -7,23 +7,34 @@ public class HappyPet {
 	// this will be used to store the happiness of your pet
 
 	public static void main(String[] args) {
-		
+
 		happinessValue=0;
 		JOptionPane.showMessageDialog(null,"Click enter to begin");
+		int pet = JOptionPane.showOptionDialog(null, "What pet do you want?", "Choose your partner for life", 0, JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Dog", "Cat", "Fish", "Bird"}, null);
 		while(happinessValue<100) {
 			int task = JOptionPane.showOptionDialog(null, "How do you want to care for your pet?", "Care", 0, JOptionPane.INFORMATION_MESSAGE, null,
 					new String[] { "Replenish Food and Water", "Go for a Walk", "Cuddle", "Clean up Poop"}, null);
-JOptionPane.showOptionDialog(null, "What pet do you want?", "Choose your partner for life", 0, JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Dog", "Cat", "Fish", "Bird"}, null);
-			
+			//JOptionPane.showOptionDialog(null, "What pet do you want?", "Choose your partner for life", 0, JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Dog", "Cat", "Fish", "Bird"}, null);
+
 			if(task==0) {
 				replenishFood();
 				JOptionPane.showMessageDialog(null, "Your pet is happy!");
 
-//sddd
+
 			}
-
+			if(task==1) {
+				goforWalk();
+				JOptionPane.showMessageDialog(null,"Your pet enjoyed time outside!");
+			}
+			if(task==2) {
+				cuddle();
+				JOptionPane.showMessageDialog(null, "Your pet is now calm and cozy with you");
+			}
+if(task==3) {
+	cleanupPoop();
+	JOptionPane.showMessageDialog(null, "Your pet is proud of its new clean space!");
+}
 		}
-
 
 
 
@@ -36,7 +47,7 @@ JOptionPane.showOptionDialog(null, "What pet do you want?", "Choose your partner
 		// 4. Use showOptionDialog to ask the user what they want to do to make their pet happy
 		//    (eg: cuddle, food, water, take a walk, groom, clean up poop).
 		//    Make sure to customize the title and question too.
-
+		//GAVIN MORRIS
 		// 6. Use user input to call the appropriate method created in step 5 below.
 
 		// 7. If you determine the happiness level is large enough, tell the
@@ -46,6 +57,21 @@ JOptionPane.showOptionDialog(null, "What pet do you want?", "Choose your partner
 
 
 
+
+	}
+
+	private static void cleanupPoop() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void cuddle() {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static void goforWalk() {
+		// TODO Auto-generated method stub
 
 	}
 
