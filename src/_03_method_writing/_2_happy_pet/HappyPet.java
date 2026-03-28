@@ -12,10 +12,10 @@ public class HappyPet {
 
 		happinessValue = 0;
 		JOptionPane.showMessageDialog(null, "Click enter to begin");
-		int pet = JOptionPane.showOptionDialog(null, "What pet do you want?", "Choose your partner for life", 0,
+		int pet = JOptionPane.showOptionDialog(null, "What pet do you want?", "Choose your partner for life.", 0,
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { " Dog", " Cat", " Fish", " Bird" }, null);
 		while (happinessValue < 100) {
-			int task = JOptionPane.showOptionDialog(null, "How do you want to care for your pet?", "Care", 0,
+			int task = JOptionPane.showOptionDialog(null, "How do you want to care for your pet? \n Selecting bird or fish may make some options invalid.", "Care", 0,
 					JOptionPane.INFORMATION_MESSAGE, null,
 					new String[] { "Replenish Food and Water", "Go for a Walk", "Cuddle", "Clean up Poop" }, null);
 			// JOptionPane.showOptionDialog(null, "What pet do you want?", "Choose your
@@ -24,23 +24,27 @@ public class HappyPet {
 			System.out.println(task);
 			if (task == 0) {
 				replenishFood();
-				JOptionPane.showMessageDialog(null, "Your pet is happy!");
+				JOptionPane.showMessageDialog(null, "hit me baby one more time");
+				System.exit(task);
 
 			}
 			if (task == 1) {
 				goforWalk();
-				JOptionPane.showMessageDialog(null, "Your pet enjoyed time outside!");
+				JOptionPane.showMessageDialog(null, "one more ok");
+				System.exit(task);
 			}
 			if (task == 2) {
 				cuddle();
-				JOptionPane.showMessageDialog(null, "Your pet is now calm and cozy with you");
+				JOptionPane.showMessageDialog(null, "click okay pleaseeeeee");
+				System.exit(task);
 			}
 			if (task == 3) {
 				cleanupPoop();
-				JOptionPane.showMessageDialog(null, "Your pet is proud of its new clean space!");
+				JOptionPane.showMessageDialog(null, "one more press and i'm back to normal");
+				System.exit(task);
 			}
 			if (task == -1) {
-				JOptionPane.showMessageDialog(null, "WARNING! | You are about to quit the program.");
+				JOptionPane.showMessageDialog(null, "tempting.....");
 				System.exit(task);
 			}
 			
@@ -72,18 +76,18 @@ JOptionPane.showMessageDialog(null, "Your pet is thankful for the cleanliness!")
 
 	private static void cuddle() {
 		// TODO Auto-generated method stub
-happinessValue = 0 + 1;
+happinessValue = 2 + 3;
 JOptionPane.showMessageDialog(null, "Your pet is warm");
 	}
 
 	private static void goforWalk() {
 		// TODO Auto-generated method stub
-happinessValue = 0 + 1;
+happinessValue = 1 + 2;
 JOptionPane.showMessageDialog(null, "Your pet is energized!");
 	}
 
 	private static void replenishFood() {
-		happinessValue = 0 + 1;
+		happinessValue = 1 + 2;
 		JOptionPane.showMessageDialog(null, "Your pet is happy!");
 	}
 
